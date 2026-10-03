@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  description TEXT DEFAULT '',
+  price REAL NOT NULL DEFAULT 0,
+  media_key TEXT,
+  media_type TEXT DEFAULT 'image',
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS likes (
+  product_id INTEGER NOT NULL,
+  visitor_id TEXT NOT NULL,
+  PRIMARY KEY (product_id, visitor_id)
+);
+
+CREATE TABLE IF NOT EXISTS carts (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  visitor_id TEXT NOT NULL,
+  product_id INTEGER NOT NULL,
+  qty INTEGER NOT NULL DEFAULT 1,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
