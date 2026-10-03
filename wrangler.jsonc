@@ -10,7 +10,7 @@
     {
       "binding": "DB",
       "database_name": "jadite-stitches-db",
-      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+      "database_id": "af6d420d-36bc-45d3-b867-f0aa0629c318"
     }
   ],
   "r2_buckets": [
