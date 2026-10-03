@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>JADITE STITCHES 🪡</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><div class="mark">JS</div><div><b>JADITE STITCHES</b><small>Made to fit. Made to stand out.</small></div></div>
+    <button id="mode" class="icon">☾</button>
+  </header>
+
+  <main>
+    <section id="home" class="page active">
+      <div class="hero"><span>NEW COLLECTION</span><h1>Style, tailored<br>for you.</h1><p>Explore our latest pieces and save what you love.</p></div>
+      <div class="sectionTitle"><h2>Products</h2><button id="refresh">Refresh</button></div>
+      <div id="products" class="grid"></div>
+    </section>
+
+    <section id="search" class="page">
+      <h2>Search</h2>
+      <input id="searchBox" class="search" placeholder="Search products...">
+      <div id="searchResults" class="grid"></div>
+    </section>
+
+    <section id="cart" class="page">
+      <h2>Your Cart</h2><div id="cartItems" class="grid"></div>
+    </section>
+
+    <section id="support" class="page">
+      <h2>Support & Channel</h2>
+      <div class="panel">
+        <p>Need help with an order or fitting? Contact Jadite Stitches directly.</p>
+        <a class="btn" href="https://wa.me/message/VH77PL3BE2MEF1" target="_blank" rel="noreferrer">WhatsApp Admin</a>
+        <a class="btn ghost" href="https://www.instagram.com/jadeite_stitches?utm_source=qr&stkn=N2JwMzM0ZHB2YTdu" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </section>
+
+    <section id="profile" class="page">
+      <h2>Profile</h2>
+      <div class="panel">
+        <label>Display name</label><input id="profileName" placeholder="Your name">
+        <p>User ID: <code id="userId"></code></p>
+        <button class="btn" id="saveProfile">Save profile</button>
+      </div>
+      <div class="panel"><h3>Admin</h3><p>Admin access will be protected by Cloudflare Access for the approved admin emails.</p><button class="btn ghost" id="adminCheck">Check admin access</button><p id="adminStatus"></p></div>
+    </section>
+  </main>
+
+  <nav>
+    <button data-page="home" class="on">⌂<span>Home</span></button>
+    <button data-page="search">⌕<span>Search</span></button>
+    <button data-page="cart">🛒<span>Cart</span></button>
+    <button data-page="support">☏<span>Support</span></button>
+    <button data-page="profile">◎<span>Profile</span></button>
+  </nav>
+  <script src="./app.js"></script>
+</body>
+</html>
